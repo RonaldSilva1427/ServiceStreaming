@@ -130,6 +130,11 @@ public class StartApp {
             String e = sc.nextLine();
             diretor.setDiretor(e);
 
+            classificacaoEtaria();
+            ClassificacaoEtaria classificacaoEtaria = new ClassificacaoEtaria();
+            int x = sc.nextInt();
+            classificacaoEtaria.setClassificacaoEtaria(x);
+
 
             plataforma();
             Plataforma plataforma = new Plataforma();
@@ -164,6 +169,10 @@ public class StartApp {
             String e = sc.nextLine();
             diretor.setDiretor(e);
 
+            classificacaoEtaria();
+            ClassificacaoEtaria classificacaoEtaria = new ClassificacaoEtaria();
+            int x = sc.nextInt();
+            classificacaoEtaria.setClassificacaoEtaria(x);
 
             plataforma();
             Plataforma plataforma = new Plataforma();
