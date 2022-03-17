@@ -1,5 +1,6 @@
 package br.edu.univas.main;
-import br.edu.univas.vo.Player;
+import br.edu.univas.vo.*;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -44,7 +45,7 @@ public class StartApp {
         } while (opcao != 0 || opcao == 0);
     }
 
-// Volta para o menu principal
+    // Volta para o menu principal
     public static void continuar() {
         System.out.println("\nPressione a tecla ENTER para voltar ao menu");
         Scanner scContinuar = new Scanner(System.in);
@@ -52,10 +53,11 @@ public class StartApp {
 
     }
 
-// Cadastra os players
+    // Cadastra os Players
     public static void cadastroPlayer() {
         System.out.println("Você escolheu a opção cadastro de Player");
 
+        // Ele aparece a primeira pagina para guardar as informaçoes
         menuPlayer();
 
         Player player = new Player();
@@ -65,6 +67,7 @@ public class StartApp {
         player.setSite(y);
         playerList.add(player);
 
+        // Aqui ele pergunta de voce deseja cadastrar novamente
         menuPlayer2();
 
         int opcaoPlayer2;
@@ -91,6 +94,7 @@ public class StartApp {
 
     }
 
+    // Cadastra o tipo (No cadastro de Titulo)
     public static void tipo() {
         System.out.println("Você escolheu a opção Cadastro de Titulo");
         menuDeTitulo();
@@ -99,11 +103,72 @@ public class StartApp {
         opcaoTitulo2 = sc.nextInt();
         if (opcaoTitulo2 == 1){
             sc.nextLine();
+            System.out.println("Você escolheu a opção Serie!");
+
+            titulo();
+            Titulo titulo = new Titulo();
+            String a = sc.nextLine();
+            titulo.setTitulo(a);
+
+            elenco();
+            Elenco elenco = new Elenco();
+            String b = sc.nextLine();
+            elenco.setElenco(b);
+
+            descricao();
+            Descricao descricao = new Descricao();
+            String c = sc.nextLine();
+            descricao.setDescricao(c);
+
+            genero();
+            Genero genero = new Genero();
+            String d = sc.nextLine();
+            genero.setGenero(d);
+
+            diretor();
+            Diretor diretor = new Diretor();
+            String e = sc.nextLine();
+            diretor.setDiretor(e);
 
 
+            plataforma();
+            Plataforma plataforma = new Plataforma();
+            String g = sc.nextLine();
+            plataforma.setPlataforma(g);
 
         }else if(opcaoTitulo2 == 2){
+            System.out.println("Você escolheu a opção Filme!");
 
+            titulo();
+            Titulo titulo = new Titulo();
+            String a = sc.nextLine();
+            titulo.setTitulo(a);
+
+            elenco();
+            Elenco elenco = new Elenco();
+            String b = sc.nextLine();
+            elenco.setElenco(b);
+
+            descricao();
+            Descricao descricao = new Descricao();
+            String c = sc.nextLine();
+            descricao.setDescricao(c);
+
+            genero();
+            Genero genero = new Genero();
+            String d = sc.nextLine();
+            genero.setGenero(d);
+
+            diretor();
+            Diretor diretor = new Diretor();
+            String e = sc.nextLine();
+            diretor.setDiretor(e);
+
+
+            plataforma();
+            Plataforma plataforma = new Plataforma();
+            String g = sc.nextLine();
+            plataforma.setPlataforma(g);
 
 
         }else {
@@ -116,58 +181,6 @@ public class StartApp {
         continuar();
 
     }
-
-    public static void pesquisaTitulo() {
-        System.out.println("Você escolheu a opção pesquisar");
-
-        continuar();
-
-    }
-
-
-    public static void fim() {
-        System.out.println("---------------------------");
-        System.out.println("|A aplicação foi encerrada|");
-        System.out.println("|            º ͜º          |");
-        System.out.println("---------------------------");
-        System.exit(0);
-
-    }
-
-   // public static void tipo() {
-   //     System.out.println("Você escolheu a opção Tipo 'Séries ou Filme'");
-   //  }
-
-    public static void titulo() {
-        System.out.println("Você escolheu a opção Título:");
-
-
-    }
-
-    public static void elenco() {
-        System.out.println("Você escolheu a opção Elenco:");
-    }
-
-    public static void descricao() {
-        System.out.println("Você escolheu a opção Descrição:");
-    }
-
-    public static void genero() {
-        System.out.println("Você escolheu a opção Gênero:");
-    }
-
-    public static void diretor() {
-        System.out.println("Você escolheu a opção Diretor:");
-    }
-
-    public static void classificacaoEtaria() {
-        System.out.println("Você escolheu a opção Classificação Etária:");
-    }
-
-    public static void plataforma() {
-        System.out.println("Você escolheu a opção Plataforma:");
-    }
-
 
 
     /*-public static String leitorString(Scanner x){

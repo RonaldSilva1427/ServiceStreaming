@@ -49,73 +49,43 @@ public class Menu {
 
     }
 
-    public static void menuTituloTipo() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Selecione a opção abaixo:              |");
-        System.out.println("| 1 - Filme:.......                      |");
-        System.out.println("| 2 - Série:.......                      |");
-        System.out.println("|----------------------------------------|");
-
-    }
-
     public static void menuDeTitulo() {
 
         System.out.println("|----------------------------------------|");
         System.out.println("| Selecione a opção abaixo:              |");
-        System.out.println("| 1 - Tipo (Série ou Filme)              |");
-        System.out.println("| 2 - Título                             |");
-        System.out.println("| 3 - Elenco                             |");
-        System.out.println("| 4 - Descrição                          |");
-        System.out.println("| 5 - Gênero                             |");
-        System.out.println("| 6 - Diretor                            |");
-        System.out.println("| 7 - Classificação Etária               |");
-        System.out.println("| 8 - Plataforma                         |");
+        System.out.println("| 1 - Série                              |");
+        System.out.println("| 2 - Filme                              |");
         System.out.println("|----------------------------------------|");
     }
+
+    public static void fim() {
+        System.out.println("---------------------------");
+        System.out.println("|A aplicação foi encerrada|");
+        System.out.println("|            º ͜º          |");
+        System.out.println("---------------------------");
+        System.exit(0);
+
+    }
+
+    public static void titulo() {
+        System.out.println("Escreva o nome do Título:");}
 
     public static void elenco() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Informe as pessoas participantes:      |");
-        System.out.println("|----------------------------------------|");
-    }
+        System.out.println("Escreva o nome das pessoas do Elenco:");}
 
     public static void descricao() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Informe as descrições da Serie ou Filme|");
-        System.out.println("|----------------------------------------|");
-    }
+        System.out.println("Escreva a Descrição:");}
 
     public static void genero() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Informe o Gênero:                      |");
-        System.out.println("|----------------------------------------|");
-    }
+        System.out.println("Escreva o Gênero:");}
 
     public static void diretor() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Informe as pessoas participantes:      |");
-        System.out.println("|----------------------------------------|");
-    }
+        System.out.println("Escreva o nome do Diretor:");}
 
     public static void classificacaoEtaria() {
-
-        System.out.println("\n|----------------------------------------|");
-        System.out.println("| Informe a classificação etária:        |");
-        System.out.println("|----------------------------------------|");
-    }
+        System.out.println("Escreva a Classificação Etária:");}
 
     public static void plataforma() {
-
-        System.out.println("\n|------------------------------------------|");
-        System.out.println("| Informe as plataformas:                  |");
-        System.out.println("| 1 - Netflix                              |");
-        System.out.println("| 2 - Amazon                               |");
-        System.out.println("|------------------------------------------|");
+        System.out.println(" Selecione umas das Plataforma que o titulo esta disponivel:");
     }
-
 }
