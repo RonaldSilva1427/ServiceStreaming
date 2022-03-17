@@ -2,9 +2,9 @@ package br.edu.univas.vo;
 
 public class ClassificacaoEtaria {
 
-    private int classificacaoEtaria;
+    private String classificacaoEtaria;
 
-    public int getClassificacaoEtaria() {return classificacaoEtaria;}
+    public String getClassificacaoEtaria() {return classificacaoEtaria;}
 
-    public void setClassificacaoEtaria(int classificacaoEtaria) {this.classificacaoEtaria = classificacaoEtaria;}
+    public void setClassificacaoEtaria(String classificacaoEtaria) {this.classificacaoEtaria = classificacaoEtaria;}
 }

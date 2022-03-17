@@ -11,6 +11,12 @@ public class StartApp {
     private static Scanner sc = new Scanner(System.in);
 
     private static ArrayList<Player> playerList = new ArrayList<>();
+    private static ArrayList<Titulo> tituloList = new ArrayList<>();
+    private static ArrayList<Elenco> elencoList = new ArrayList<>();
+    private static ArrayList<Descricao> descricaoList = new ArrayList<>();
+    private static ArrayList<Genero> generoList = new ArrayList<>();
+    private static ArrayList<Diretor> diretorList = new ArrayList<>();
+    private static ArrayList<ClassificacaoEtaria> classificacaoEtariaList = new ArrayList<>();
 
     public static void main (String [] args) {
 
@@ -109,32 +115,37 @@ public class StartApp {
             Titulo titulo = new Titulo();
             String a = sc.nextLine();
             titulo.setTitulo(a);
+            tituloList.add(titulo);
 
             elenco();
             Elenco elenco = new Elenco();
             String b = sc.nextLine();
             elenco.setElenco(b);
+            elencoList.add(elenco);
 
             descricao();
             Descricao descricao = new Descricao();
             String c = sc.nextLine();
             descricao.setDescricao(c);
+            descricaoList.add(descricao);
 
             genero();
             Genero genero = new Genero();
             String d = sc.nextLine();
             genero.setGenero(d);
+            generoList.add(genero);
 
             diretor();
             Diretor diretor = new Diretor();
             String e = sc.nextLine();
             diretor.setDiretor(e);
+            diretorList.add(diretor);
 
             classificacaoEtaria();
             ClassificacaoEtaria classificacaoEtaria = new ClassificacaoEtaria();
-            int x = sc.nextInt();
+            String x = sc.nextLine();
             classificacaoEtaria.setClassificacaoEtaria(x);
-
+            classificacaoEtariaList.add(classificacaoEtaria);
 
             plataforma();
             Plataforma plataforma = new Plataforma();
@@ -148,31 +159,37 @@ public class StartApp {
             Titulo titulo = new Titulo();
             String a = sc.nextLine();
             titulo.setTitulo(a);
+            tituloList.add(titulo);
 
             elenco();
             Elenco elenco = new Elenco();
             String b = sc.nextLine();
             elenco.setElenco(b);
+            elencoList.add(elenco);
 
             descricao();
             Descricao descricao = new Descricao();
             String c = sc.nextLine();
             descricao.setDescricao(c);
+            descricaoList.add(descricao);
 
             genero();
             Genero genero = new Genero();
             String d = sc.nextLine();
             genero.setGenero(d);
+            generoList.add(genero);
 
             diretor();
             Diretor diretor = new Diretor();
             String e = sc.nextLine();
             diretor.setDiretor(e);
+            diretorList.add(diretor);
 
             classificacaoEtaria();
             ClassificacaoEtaria classificacaoEtaria = new ClassificacaoEtaria();
-            int x = sc.nextInt();
+            String x = sc.nextLine();
             classificacaoEtaria.setClassificacaoEtaria(x);
+            classificacaoEtariaList.add(classificacaoEtaria);
 
             plataforma();
             Plataforma plataforma = new Plataforma();
