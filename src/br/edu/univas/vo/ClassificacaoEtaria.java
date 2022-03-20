@@ -7,4 +7,12 @@ public class ClassificacaoEtaria {
     public String getClassificacaoEtaria() {return classificacaoEtaria;}
 
     public void setClassificacaoEtaria(String classificacaoEtaria) {this.classificacaoEtaria = classificacaoEtaria;}
+
+    @Override
+    public String toString(){
+
+        return classificacaoEtaria;
+    }
+
+
 }

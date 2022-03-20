@@ -7,4 +7,11 @@ public class Elenco {
     public String getElenco() {return elenco;}
 
     public void setElenco(String elenco) {this.elenco = elenco;}
+
+    @Override
+    public String toString(){
+
+        return elenco;
+    }
+
 }

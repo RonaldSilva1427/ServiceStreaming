@@ -9,6 +9,8 @@ import static br.edu.univas.main.Menu.*;
 public class StartApp {
 
     private static Scanner sc = new Scanner(System.in);
+////// ahubwdihauihbwdoibaoiwdoiabwdjubjaubwduoaubdw
+
 
     private static ArrayList<Player> playerList = new ArrayList<>();
     private static ArrayList<Titulo> tituloList = new ArrayList<>();
@@ -195,6 +197,10 @@ public class StartApp {
             Plataforma plataforma = new Plataforma();
             String g = sc.nextLine();
             plataforma.setPlataforma(g);
+
+           for (Titulo t : a){
+               System.out.println(t.getTitulo());
+           }
 
 
         }else {
